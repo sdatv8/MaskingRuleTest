@@ -4,6 +4,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
+# create postgres instance
+
 def PostgresMaskingRule(driver):
     SelectInstance = driver.find_element_by_xpath('/html/body/div[1]/div/div/div/div[2]/div/div/div/div[2]/div[2]/div/div[1]/div[3]/div/div/div[1]/div/div/div/div/div[1]/span').click()
     SelectInstance = driver.find_element_by_xpath("//*[contains(@class, 'Select-menu-outer')]//*[text() = 'PostgreSQL@192.168.1.244:5436']").click()
